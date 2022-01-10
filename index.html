@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>force simulation</title>
+
+    <style>
+        .button-group{
+            width: 960px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+        .lines line{
+            stroke: black;
+        }
+        .circle .dragging{
+            fill: yellow;
+        }
+        .circle circle{
+            fill: pink;
+            stroke: red;
+        }
+        .texts text{
+            pointer-events: none;
+            user-select: none;
+        }
+        .circle .selected{
+            fill: yellow;
+        }
+        svg{
+            border: 2px solid black;
+        }
+        button{
+            border-radius: 4px 4px 4px 4px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="bundle.js"></script>
+    
+</body>
+</html>
